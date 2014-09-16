@@ -12,7 +12,7 @@
     "recipe[rvm::system]",
     "recipe[apt-repo]",
     "recipe[atom]",
-    "recipe[td-agent]"
+    "recipe[td-agent-private]"
   ],
   "automatic": {
     "ipaddress": "204"
