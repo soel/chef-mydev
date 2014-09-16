@@ -11,7 +11,8 @@
     "recipe[java]",
     "recipe[rvm::system]",
     "recipe[apt-repo]",
-    "recipe[atom]"
+    "recipe[atom]",
+    "recipe[td-agent]"
   ],
   "automatic": {
     "ipaddress": "204"
