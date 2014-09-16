@@ -1,0 +1,19 @@
+{
+  "java": {
+    "jdk_version": 7
+  },
+  "rvm": {
+       "user": "kanbara",
+       "default_ruby": "2.1.2",
+       "rubies": ["2.1.2"]
+  },
+  "run_list": [
+    "recipe[java]",
+    "recipe[rvm::system]",
+    "recipe[apt-repo]",
+    "recipe[atom]"
+  ],
+  "automatic": {
+    "ipaddress": "204"
+  }
+}
