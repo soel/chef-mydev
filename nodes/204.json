@@ -3,13 +3,17 @@
     "jdk_version": 7
   },
   "rvm": {
-       "user": "kanbara",
-       "default_ruby": "2.1.2",
-       "rubies": ["2.1.2"]
+    "user_insalls":[
+      {
+        "user": "kanbara",
+        "update": "stable",
+        "default_ruby": "2.1.2"
+      }
+    ]
   },
   "run_list": [
     "recipe[java]",
-    "recipe[rvm::system]",
+    "recipe[rvm::user]",
     "recipe[apt-repo]",
     "recipe[atom]",
     "recipe[td-agent-private]"
