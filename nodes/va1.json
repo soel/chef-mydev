@@ -1,0 +1,12 @@
+{
+  "jenkins": {
+    "mirror": "http://mirrors.esast.com/"
+  },
+  "run_list": [
+    "recipe[jenkins::java]",
+    "recipe[jenkins::master]"
+  ],
+  "automatic": {
+    "ipaddress": "va1"
+  }
+}
