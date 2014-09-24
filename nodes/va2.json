@@ -1,0 +1,17 @@
+{
+  "rvm": {
+    "user_insalls":[
+      {
+        "user": "vagrant",
+        "update": "stable",
+        "default_ruby": "2.1.2"
+      }
+    ]
+  },
+  "run_list": [
+    "recipe[rvm::user]"
+  ],
+  "automatic": {
+    "ipaddress": "va2"
+  }
+}

@@ -6,12 +6,15 @@ provisioner:
   name: chef_solo
 
 platforms:
-  - name: centos-6.4
+  - name: ubuntu-14.04
 
 suites:
   - name: default
     run_list:
-      - recipe[apache2::default]
+      - recipe[java]
+      - recipe[apt-repo]
+      - recipe[atom]
+      - recipe[td-agent-private]
     attributes:
-      apache:
-        default_site_enabled: 'true'
+      java:
+        jdk_version: 7
