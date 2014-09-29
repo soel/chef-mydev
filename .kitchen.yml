@@ -17,6 +17,7 @@ suites:
       - recipe[rvm::user]
       - recipe[atom]
       - recipe[td-agent-private]
+      - recipe[golang]
     attributes:
       java:
         jdk_version: 7

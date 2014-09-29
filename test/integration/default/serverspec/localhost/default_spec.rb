@@ -25,3 +25,7 @@ end
 describe package('td-agent') do
   it { should be_installed }
 end
+
+describe command('/usr/local/go/bin/go version') do
+  its(:stdout) { should match /go1.2.2/}
+end

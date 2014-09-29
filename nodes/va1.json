@@ -1,10 +1,6 @@
 {
-  "jenkins": {
-    "mirror": "http://mirrors.esast.com/"
-  },
   "run_list": [
-    "recipe[jenkins::java]",
-    "recipe[jenkins::master]"
+    "recipe[golang]"
   ],
   "automatic": {
     "ipaddress": "va1"
