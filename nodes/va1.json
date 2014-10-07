@@ -1,5 +1,24 @@
 {
+  "java": {
+    "jdk_version": 7
+  },
+  "rvm":{
+    "user_installs":[
+      {
+        "user": "vagrant",
+        "upgrade": "stable",
+        "default_ruby": "2.1.2"
+      }
+    ]
+  },
   "run_list": [
+    "recipe[golang]",
+    "recipe[java]",
+    "recipe[apt-repo]",
+    "recipe[rvm::system]",
+    "recipe[rvm::user]",
+    "recipe[atom]",
+    "recipe[td-agent-private]",
     "recipe[golang]"
   ],
   "automatic": {
